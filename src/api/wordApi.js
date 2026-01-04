@@ -6,6 +6,7 @@ const api = axios.create({
 
 /* 일차 */
 export const getDayList = () => api.get('/day/list')
+export const insertDay = (data) => api.post('/day/insert', data)
 
 /* 단어 */
 export const getWordList = (dSeq) => api.get(`/word/list/${dSeq}`)
